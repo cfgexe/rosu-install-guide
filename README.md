@@ -36,6 +36,7 @@ sudo nano /etc/nginx/sites-avaiable/rosu.conf
 ```
 ## mysql setup
 ```sh
+sudo service mysql start
 sudo mysql
 # replace
 # YOUR_DB_NAME with your preferred db name
@@ -50,6 +51,8 @@ CREATE USER 'YOUR_DB_USER'@'localhost' IDENTIFIED BY 'YOUR_DB_PASSWORD';
 GRANT ALL PRIVILEGES ON YOUR_DB_NAME.* TO 'YOUR_DB_USER'@'localhost';
 FLUSH PRIVILEGES;
 quit
+# prepare db
+mysql -u YOUR_DB_USER -p YOUR_DB_NAME < USSSR/extras/db.sql
 ```
 ## All done!
 [Next: USSR setup](https://github.com/cfgexe/rosu-install-guide/blob/main/USSR.md)
