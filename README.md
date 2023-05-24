@@ -50,5 +50,6 @@ CREATE USER 'YOUR_DB_USER'@'localhost' IDENTIFIED BY 'YOUR_DB_PASSWORD';
 GRANT ALL PRIVILEGES ON YOUR_DB_NAME.* TO 'YOUR_DB_USER'@'localhost';
 FLUSH PRIVILEGES;
 quit
+```
 ## All done!
 [Next: USSR setup](https://github.com/cfgexe/rosu-install-guide/blob/main/USSR.md)
