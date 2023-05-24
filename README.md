@@ -34,5 +34,21 @@ sudo ln -s /etc/nginx/sites-available/rosu.conf /etc/nginx/sites-enabled/rosu.co
 # Edit this file replacing `your.domain`  with your domain and `path/to/certs` with the path to the certs generated from cloudflare
 sudo nano /etc/nginx/sites-avaiable/rosu.conf
 ```
+## mysql setup
+```sh
+sudo mysql
+# replace
+# YOUR_DB_NAME with your preferred db name
+# YOUR_DB_USER with your db username
+# YOUR_DB_PASSWORD with a secure password
+CREATE DATABASE YOUR_DB_NAME;
+
+# create a user to use the bancho.py database
+CREATE USER 'YOUR_DB_USER'@'localhost' IDENTIFIED BY 'YOUR_DB_PASSWORD';
+
+# grant the user full access to all tables in the bancho.py database
+GRANT ALL PRIVILEGES ON YOUR_DB_NAME.* TO 'YOUR_DB_USER'@'localhost';
+FLUSH PRIVILEGES;
+quit
 ## All done!
 [Next: USSR setup](https://github.com/cfgexe/rosu-install-guide/blob/main/USSR.md)
