@@ -2,6 +2,6 @@
 # If you get stuck at any point, DM me at ~tree#6969 
 
 ## Overview
-[Setting Up](https://github.com/cfgexe/rosu-install-guide/blob/master/Setting%20Up.md)
+[Setting Up](https://github.com/cfgexe/rosu-install-guide/blob/main/Setting%20Up.md)
 </br>
-[USSR Setup](https://github.com/cfgexe/rosu-install-guide/blob/master/USSR.md)
+[USSR Setup](https://github.com/cfgexe/rosu-install-guide/blob/main/USSR.md)
