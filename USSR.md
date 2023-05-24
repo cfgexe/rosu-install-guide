@@ -2,7 +2,7 @@
 
 ## Configuring
 ```sh
-sudo service mysql start
+cd USSR
 sudo service redis-server start
 
 sudo python3.9 -m pip install -r requirements.txt
