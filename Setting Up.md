@@ -18,8 +18,6 @@ sudo apt install -y python3.9-dev python3.9-distutils \
 git clone https://github.com/RealistikOsu/pep.py
 # clone USSR
 git clone https://github.com/RealistikOsu/USSR
-# clone perf-service (optional, don't do if you want an oppai system)
-git clone https://github.com/RealistikOsu/performance-service
 # clone avatar-server
 git clone https://github.com/osuDebian/avatar-server
 # clone API
@@ -38,10 +36,7 @@ sudo nano /etc/nginx/sites-avaiable/rosu.conf
 ```sh
 sudo service mysql start
 sudo mysql
-# replace
-# YOUR_DB_NAME with your preferred db name
-# YOUR_DB_USER with your db username
-# YOUR_DB_PASSWORD with a secure password
+
 CREATE DATABASE YOUR_DB_NAME;
 
 # create a user to use the bancho.py database
