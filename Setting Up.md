@@ -47,7 +47,7 @@ GRANT ALL PRIVILEGES ON YOUR_DB_NAME.* TO 'YOUR_DB_USER'@'localhost';
 FLUSH PRIVILEGES;
 quit
 # prepare db
-mysql -u YOUR_DB_USER -p YOUR_DB_NAME < USSSR/extras/db.sql
+mysql -u YOUR_DB_USER -p YOUR_DB_NAME < USSR/extras/db.sql
 ```
 ## All done!
 [Next: USSR setup](https://github.com/cfgexe/rosu-install-guide/blob/main/USSR.md)
